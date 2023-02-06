@@ -1,0 +1,48 @@
+//this is the cat facts class for the quiz
+//1.cat facts//
+
+import java.util.Scanner;
+
+public class CatFacts
+{ public static void main(String[] args) {
+        System.out.println("welcome to the cat facts quiz");
+        System.out.println("in this quiz you will be asked 5 questions about cat facts");
+        System.out.println("you will be given 4 options for each question");
+        System.out.println("you will have to select the correct answer");
+        System.out.println("you will be given 3 lives");
+        System.out.println("if you get a question wrong you will lose a life");
+
+        Scanner input = new Scanner(System.in);
+        int lives =3;
+        int score = 0;
+
+
+        System.out.println("press enter to start the quiz");
+        input.nextLine();
+/////////////Question 1//////////////////////////////
+        System.out.println("question 1");
+        System.out.println("what is the average lifespan of a cat?");
+        System.out.println("1. 10 years");
+        System.out.println("2. 15 years");
+        System.out.println("3. 20 years");
+        System.out.println("4. 25 years");
+/////////////Question 1//////////////////////////////
+
+        int answer = input.nextInt(); //allows user to input answer
+
+        if(answer == 1){ //if the user inputs 1
+            System.out.println("Correct!");
+            score=+1;
+            System.out.println("Your current score is " + score);
+            lives=3;
+            System.out.println("you still have "+lives + " lives");
+
+        }else{ //if the user inputs anything else.
+            System.out.println("Incorrect!");
+            lives --;
+            System.out.println("you currently have "+lives + " lives");
+            System.out.println("score is still " + score);
+
+        }
+    }
+}
