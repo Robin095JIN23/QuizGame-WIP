@@ -1,0 +1,55 @@
+//this is a class for the cat breeds quiz
+
+
+import java.util.Scanner;
+
+public class
+CatBreeds {
+    public static void main(String[] args) {
+        System.out.println("welcome to the cat breeds quiz");
+        System.out.println("in this quiz you will be asked 5 questions about cat breeds");
+        System.out.println("you will be given 4 options for each question");
+        System.out.println("you will have to select the correct answer");
+        System.out.println("you will be given 3 lives");
+        System.out.println("if you get a question wrong you will lose a life");
+
+        Scanner input = new Scanner(System.in);
+
+        int lives = 3; //lives
+        int score = 0; //score
+
+
+        System.out.println("press enter to start the quiz");
+        input.nextLine();
+
+//////////////////////////question 1///////////////////////////
+        System.out.println("question 1");
+        System.out.println("what is the most popular cat breed in the world?");
+        System.out.println("1. persian");
+        System.out.println("2. siamese");
+        System.out.println("3. maine coon");
+        System.out.println("4. Ragdoll");
+
+///////////////////////////End of question 1 ////////////////////////////////////////        ////////////////////////////////////////////////////////////////////
+
+        input.nextLine(); // input on next line
+
+        ///////////////Conditions for question1/////////////
+
+        int answer = input.nextInt(); //answer
+
+        if(answer == 1){
+            System.out.println("Correct!");
+            score=+1;
+            System.out.println("Your current score is " + score);
+            System.out.println("you still have "+lives + " lives");
+
+        }else{
+            System.out.println("Incorrect!");
+            lives--;
+            System.out.println("you currently have "+lives + " lives");
+
+            ////////////////////////////////////////////////////
+        }
+    }
+}
