@@ -66,6 +66,10 @@ public class Main {
 
 ///to do list///
 //1. create a class for each quiz
+//2. Find a way to flush the console.
+////////////////////////////////////
+
+//////Faq//////
 
 //how do you run other classes from a main class?
 //A: you can create an object of the class and call the method
@@ -75,3 +79,5 @@ public class Main {
 
 //how do you call a method from a class?
 //A: objectName.methodName();
+
+/////End of Faq///////////
